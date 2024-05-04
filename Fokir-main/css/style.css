@@ -1,0 +1,703 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* start container */
+.container {
+   width: 70%;
+   margin: auto;
+   height: 100%;
+}
+/* End container */
+/* Start Clear */
+.clear {
+   clear: both;
+}
+/* End Clear */
+/* Start Text With 3 UnderLine */
+.text-line {
+   text-align: center;
+}
+.text-line h2 {
+   color: #333333;
+   font-size: 40px;
+   font-family: "Source Sans 3", sans-serif;
+}
+.text-line .father {
+   display: block;
+   width: 15%;
+   margin: auto;
+}
+.text-line .father span {
+   display: block;
+   background-color: #ff305b;
+   height: 1px;
+}
+.text-line .father :first-child {
+   width: 50%;
+   margin: 4px auto;
+}
+.text-line .father :last-child {
+   width: 50%;
+   margin: 4px auto;
+}
+
+.landing {
+   background-image: linear-gradient(#000000cc, #000000cc),
+      url(../images/hero-img.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   position: relative;
+}
+.nav-left,
+.nav-right {
+   float: left;
+}
+.nav-left {
+   width: 10%;
+}
+.nav-right {
+   width: 90%;
+}
+.nav-left a {
+   display: inline-block;
+   height: 50%;
+  
+   transform: translateY(50%);
+   text-decoration: none;
+   font-family: "Roboto", sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   color: #ff305b;
+}
+
+.nav-right ul {
+   float: right;
+}
+.nav-right ul li {
+   float: left;
+   list-style: none;
+   height: 50%;
+   padding: 20px 5px;
+}
+.nav-right ul li a {
+   text-decoration: none;
+   padding: 0 5px;
+   color: white;
+   font-size: 17px;
+   font-weight: 300;
+   font-family: "Roboto", sans-serif;
+   transition: color 0.7s ease;
+}
+.nav-right ul li:hover a {
+   color: #d42a4c;
+}
+.landing-home {
+   position: absolute;
+   text-align: center;
+   color: white;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.landing-home span {
+   font-size: 24px;
+   font-weight: 600;
+   font-family: "Source Sans 3", sans-serif;
+}
+.landing-home h1 {
+   font-size: 70px;
+   font-weight: 700;
+   font-family: "Source Sans 3", sans-serif;
+   color: #ff305b;
+}
+.animate {
+   display: inline-block;
+}
+.landing-home p {
+   font-size: 26px;
+   font-weight: 300;
+   font-family: "Source Sans 3", sans-serif;
+   color: white;
+   width: 100%;
+  
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 2px solid white;
+   animation: texting 2s alternate infinite linear;
+}
+@keyframes texting {
+   0% {
+      width: 64%;
+   }
+   50% {
+      width: 100%;
+   }
+  
+   50%,
+   100% {
+      width: 100%;
+   }
+}
+
+.about .container {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+.about .left-side,
+.about .right-side {
+   float: left;
+   margin: 0 5%;
+}
+.about .left-side {
+   width: 31%;
+   height: 435px;
+   border: 8px solid #525252;
+   border-radius: 5px;
+   position: relative;
+}
+.about .right-side {
+   width: 49%;
+}
+.about .content {
+   width: 105%;
+   height: 105%;
+   position: absolute;
+   top: 4%;
+   left: 5%;
+   position: relative;
+   overflow: hidden;
+}
+.about .content img {
+   width: 100%;
+   height: 100%;
+}
+.about .social {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   list-style-type: none;
+   transform: translateY(100%);
+   opacity: 0;
+   transition: all 0.6s;
+}
+.about .social ul {
+   list-style-type: none;
+   text-align: center;
+   margin: 60% 0;
+}
+.about .social ul li {
+   display: inline-block;
+}
+.about .social ul li a {
+   color: white;
+   padding: 5px 10px;
+   font-size: 22px;
+   transition: all 0.3s;
+}
+.about .content:hover .social {
+   transform: translateY(0%);
+   opacity: 1;
+}
+.social ul li a:hover {
+   color: #ff305b;
+}
+
+.about .right-side h2 {
+   font-family: "Source Sans 3", sans-serif;
+   font-weight: 600;
+   font-size: 34px;
+   margin-bottom: 10px;
+}
+.about .right-side h2::first-letter {
+   color: #ff305b;
+}
+.about .right-side .disc {
+   font-family: "Roboto", sans-serif;
+   line-height: 1.6;
+   color: #555;
+   padding-bottom: 30px;
+   border-bottom: #555 dashed 1px;
+}
+.about .right-side .info {
+   margin-top: 30px;
+}
+.about .right-side .info p {
+   color: #333;
+   float: left;
+   width: 48%;
+   margin-bottom: 20px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+}
+.about .right-side .info p span {
+   font-weight: 400;
+   color: #555;
+}
+.about .buttons button {
+   background-color: #ff305b;
+   border: none;
+   border-radius: 5px;
+   float: left;
+   transition: all 0.5s;
+}
+.about .buttons .btn-two {
+   margin-left: 15px;
+}
+.about .buttons button a {
+   display: inline-block;
+   font-family: "Roboto", sans-serif;
+   padding: 13px 25px;
+   text-decoration: none;
+   color: white;
+   font-size: 17px;
+}
+.about .buttons button a span {
+   margin-left: 6px;
+}
+.about .buttons button:hover {
+   background-color: #ec2403;
+}
+/*
+================================
+ End About  
+================================
+*/
+/*
+================================
+ Start Services  
+================================
+*/
+.services {
+   background-color: #f1f1f1;
+}
+.services .container {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   padding: 100px 0px;
+   text-align: center;
+}
+.services .container .holder {
+   margin-top: 40px;
+}
+.services .container .card {
+   width: 25%;
+   float: left;
+   padding: 50px 10px;
+   transition: box-shadow 0.7s ease, background-color 0.7s ease;
+}
+.services .container .card i {
+   color: #ff305b;
+   font-size: 30px;
+   padding: 10px;
+   transition: all 0.5s;
+}
+.services .container .holder .card h3 {
+   color: #333;
+   font-size: 24px;
+   font-family: "Source Sans 3", sans-serif;
+   padding: 10px;
+   font-weight: 600;
+}
+.services .container .holder .card p {
+   color: #555;
+   font-family: "Roboto", sans-serif;
+   line-height: 1.6;
+}
+.services .container .holder .card p {
+   color: #555;
+   font-family: "Roboto", sans-serif;
+   line-height: 1.6;
+}
+.services .container .holder .card:hover {
+   box-shadow: 0px 10px 15px 5px #00000010, -0px -0px 5px #00000010;
+   background-color: white;
+}
+.services .container .holder .card:hover i {
+   transform: scale(1.2, 1.2);
+}
+
+/*
+================================
+ End Services  
+================================
+*/
+/*
+================================
+ Start Portfolio  
+================================
+*/
+.portfolio {
+   margin-bottom: 100px;
+}
+.portfolio .container {
+   text-align: center;
+}
+.portfolio .container ul {
+   list-style-type: none;
+   width: fit-content;
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+.portfolio .container ul li {
+   float: left;
+   padding: 15px;
+   font-size: 18px;
+   text-transform: uppercase;
+   font-family: "Roboto", sans-serif;
+   color: #333;
+   cursor: pointer;
+}
+.portfolio .container .product .hold {
+   float: left;
+   width: 33.33%;
+   padding: 15px;
+   overflow: hidden;
+}
+.portfolio .container .product .picture {
+   position: relative;
+}
+.portfolio .container .product .picture img {
+   width: 100%;
+}
+.portfolio .container .product .layer {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #00000060;
+   opacity: 0;
+   transition: all 0.5s;
+}
+.portfolio .container .product .picture .layer i {
+   color: #ff305b;
+   position: absolute;
+   bottom: 8%;
+   right: 5%;
+   font-size: 20px;
+}
+.portfolio .container .product .picture:hover .layer {
+   opacity: 1;
+}
+
+/*
+================================
+ End Portfolio  
+================================
+*/
+/*
+================================
+ Start Icon  
+================================
+*/
+.icon {
+   background-color: #f1f1f1;
+   padding: 55px 0px;
+   text-align: center;
+}
+.icon .container .card-icon {
+   float: left;
+   width: 25%;
+   padding: 20px;
+}
+.icon .container .card-icon i {
+   color: #ff305b;
+   font-size: 30px;
+   padding: 10px;
+}
+.icon .container .card-icon h3 {
+   font-family: "Source Sans 3", sans-serif;
+   font-size: 26px;
+   color: #333;
+   margin-top: 8px;
+   margin-bottom: 8px;
+}
+.icon .container .card-icon p {
+   font-family: "Source Sans 3", sans-serif;
+   color: #555;
+   font-weight: 600;
+}
+
+/*
+================================
+ End Icon  
+================================
+*/
+/*
+================================
+ Start Feedback  
+================================
+*/
+.feedback {
+   padding: 100px;
+}
+
+.feedback .quote {
+   margin: 50px auto 0;
+   padding: 50px;
+   width: 80%;
+   background-image: linear-gradient(135deg, #ff305b 18%, #f1f1f1 18%);
+}
+.feedback .container .quote .pic,
+.feedback .container .quote .content {
+   float: left;
+}
+.feedback .container .quote .pic {
+   width: 20%;
+}
+.feedback .container .quote .pic img {
+   width: 125px;
+   height: 125px;
+   border-radius: 50%;
+}
+.feedback .container .quote .content {
+   width: 80%;
+   padding-left: 10px;
+}
+.feedback .container .quote .content h3 {
+   color: #333;
+   font-family: "Source Sans 3", sans-serif;
+   font-size: 26px;
+   font-weight: 600;
+}
+.feedback .container .quote .content a {
+   display: block;
+   text-decoration: none;
+   color: #777;
+   font-size: 15px;
+   font-weight: 600;
+   font-family: "Source Sans 3", sans-serif;
+   padding: 10px 0;
+}
+.feedback .container .quote .content p {
+   color: #555;
+   line-height: 1.6;
+   font-family: "Roboto", sans-serif;
+   font-style: italic;
+}
+.feedback .container .quote .content ul {
+   padding: 10px 0;
+}
+.feedback .container .quote .content ul li {
+   list-style-type: none;
+   float: left;
+   color: #f1c30d;
+   margin: 0 1px;
+}
+/*
+================================
+ End feedback  
+================================
+*/
+/*
+================================
+ Start Blog  
+================================
+*/
+.blog {
+   padding: 100px 0;
+   background-color: #f1f1f1;
+}
+.blog .container .show {
+   float: left;
+   width: 33.33%;
+   padding: 18px;
+   margin-top: 20px;
+}
+.blog .container .show img {
+   width: 100%;
+}
+.blog .container .show .blog-text {
+   padding: 20px;
+   background-color: white;
+}
+.blog .container .show .blog-text span {
+   color: #555;
+   font-size: 17px;
+   display: block;
+   font-family: "Roboto", sans-serif;
+}
+.blog .container .show .blog-text .design {
+   text-decoration: none;
+   font-size: 24px;
+   font-weight: 600;
+   display: block;
+   font-family: "Source Sans 3", sans-serif;
+   margin: 10px 0px;
+   color: #3a3a3a;
+   transition: color 0.5s;
+}
+.blog .container .show .blog-text .design:hover {
+   color: #ff305b;
+}
+.blog .container .show .blog-text p {
+   color: #555;
+   line-height: 1.6;
+   font-family: "Roboto", sans-serif;
+   margin: 10px 0px;
+}
+.blog .container .show .blog-text .read {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 400;
+   color: #3a3a3a;
+   line-height: 1.6;
+   font-family: "Roboto", sans-serif;
+   margin: 10px 0px;
+   transition: color 0.5s;
+}
+.blog .container .show .blog-text .read:hover {
+   color: #ff305b;
+}
+.blog .container .show .blog-text .read i {
+   margin-left: 3px;
+}
+
+/*
+================================
+ End Blog  
+================================
+*/
+/*
+================================
+ Start Contact Us 
+================================
+*/
+.contact {
+   padding: 100px 0;
+}
+.contact .container {
+   width: 50%;
+}
+.contact .container form {
+   margin-top: 45px;
+}
+.contact .container form .name-email .text {
+   width: 49%;
+   float: left;
+}
+.contact .container form .name-email .email {
+   float: right;
+   width: 49%;
+}
+.contact .container form .text,
+.contact .container form .email {
+   padding: 12px;
+   border-radius: 4px;
+   border: 1px solid #33333386;
+   margin-bottom: 25px;
+   font-family: "Roboto", sans-serif;
+   font-size: 14px;
+   color: #000;
+}
+.contact .container form .name-email .text::placeholder,
+.contact .container form .name-email .email::placeholder {
+   font-family: "Roboto", sans-serif;
+   font-size: 14px;
+   color: #000000b2;
+}
+.contact .container form input:focus,
+.contact .container form textarea:focus {
+   outline: #ff305b 1px solid;
+   border: none;
+}
+.contact .container form .subject {
+   width: 100%;
+   padding: 12px;
+   border-radius: 4px;
+   border: 1px solid #33333386;
+   margin-bottom: 25px;
+   font-family: "Roboto", sans-serif;
+   font-size: 14px;
+   color: #000;
+}
+.contact .container form .messege {
+   width: 100%;
+   height: 150px;
+   border-radius: 4px;
+   outline: none;
+   border: 1px solid #33333386;
+   padding: 10px;
+   resize: none;
+   font-family: "Roboto", sans-serif;
+   font-size: 14px;
+   margin-bottom: 25px;
+   color: #000;
+}
+.contact .container form .messege::placeholder {
+   font-size: 14px;
+   font-family: "Roboto", sans-serif;
+   color: #000000b2;
+}
+.contact .container form button {
+   padding: 12px 20px;
+   background-color: #ff305b;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   font-family: "Roboto", sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   transition: all 0.5s;
+}
+.contact .container form button:hover {
+   background-color: #ec2403;
+   cursor: pointer;
+}
+/*
+================================
+ End Contact Us  
+================================
+*/
+/*
+================================
+ Start Footer  
+================================
+*/
+.footer {
+   background-color: #333333;
+   padding: 33px;
+   text-align: center;
+}
+.footer .container .social-fokir ul{
+   width: fit-content;
+   margin: 0 auto;
+   padding: 20px 0;
+}
+.footer .container .social-fokir ul li{
+   list-style-type: none;
+   float: left;
+}
+.footer .container .social-fokir ul li a{
+   padding: 10px;
+   color: white;
+   font-size: 20px;
+   transition: all .5s;
+}
+.footer .container .social-fokir ul li:hover a{
+   color: #ff305b;
+}
+.footer .container p{
+   font-family: "Roboto", sans-serif;
+   color: white;
+}
+.footer .container a{
+   font-family: "Roboto", sans-serif;
+   color: #ff305b;
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 4px;
+}
+/*
+================================
+ End Footer  
+================================
+*/
